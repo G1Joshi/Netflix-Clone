@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		93D518E529756A71003E4791 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D518E429756A71003E4791 /* CollectionTableViewCell.swift */; };
 		93EAF8AA2979167200FFB679 /* HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EAF8A92979167200FFB679 /* HeroHeaderView.swift */; };
+		93EAF8AD297934C600FFB679 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EAF8AC297934C600FFB679 /* APICaller.swift */; };
+		93EAF8AF2979350C00FFB679 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EAF8AE2979350C00FFB679 /* Constants.swift */; };
+		93EAF8B12979377E00FFB679 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EAF8B02979377E00FFB679 /* Movie.swift */; };
 		93F08AD12975357600C498F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F08AD02975357600C498F4 /* AppDelegate.swift */; };
 		93F08AD32975357600C498F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F08AD22975357600C498F4 /* SceneDelegate.swift */; };
 		93F08AD52975357600C498F4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F08AD42975357600C498F4 /* TabBarController.swift */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		93D518E429756A71003E4791 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		93EAF8A92979167200FFB679 /* HeroHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderView.swift; sourceTree = "<group>"; };
+		93EAF8AC297934C600FFB679 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		93EAF8AE2979350C00FFB679 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		93EAF8B02979377E00FFB679 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		93F08ACD2975357600C498F4 /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F08AD02975357600C498F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F08AD22975357600C498F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93EAF8AB2979305B00FFB679 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				93EAF8AE2979350C00FFB679 /* Constants.swift */,
+				93EAF8AC297934C600FFB679 /* APICaller.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		93F08AC42975357600C498F4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +87,7 @@
 				93F08AE5297542AE00C498F4 /* Model */,
 				93F08AE6297542B700C498F4 /* View */,
 				93F08AE7297542CA00C498F4 /* Controller */,
+				93EAF8AB2979305B00FFB679 /* Service */,
 				93F08AD92975357700C498F4 /* Assets.xcassets */,
 				93F08ADB2975357700C498F4 /* LaunchScreen.storyboard */,
 				93F08ADE2975357700C498F4 /* Info.plist */,
@@ -82,6 +98,7 @@
 		93F08AE5297542AE00C498F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93EAF8B02979377E00FFB679 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,8 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F08AED2975433E00C498F4 /* SearchViewController.swift in Sources */,
+				93EAF8AF2979350C00FFB679 /* Constants.swift in Sources */,
+				93EAF8B12979377E00FFB679 /* Movie.swift in Sources */,
 				93F08AD52975357600C498F4 /* TabBarController.swift in Sources */,
 				93F08AEF2975435D00C498F4 /* DownloadViewController.swift in Sources */,
+				93EAF8AD297934C600FFB679 /* APICaller.swift in Sources */,
 				93F08AD12975357600C498F4 /* AppDelegate.swift in Sources */,
 				93F08AD32975357600C498F4 /* SceneDelegate.swift in Sources */,
 				93F08AEB2975433300C498F4 /* UpcomingViewController.swift in Sources */,
