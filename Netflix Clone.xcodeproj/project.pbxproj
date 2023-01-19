@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93D518E529756A71003E4791 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D518E429756A71003E4791 /* CollectionTableViewCell.swift */; };
+		93EAF8AA2979167200FFB679 /* HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EAF8A92979167200FFB679 /* HeroHeaderView.swift */; };
 		93F08AD12975357600C498F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F08AD02975357600C498F4 /* AppDelegate.swift */; };
 		93F08AD32975357600C498F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F08AD22975357600C498F4 /* SceneDelegate.swift */; };
 		93F08AD52975357600C498F4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F08AD42975357600C498F4 /* TabBarController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		93D518E429756A71003E4791 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		93EAF8A92979167200FFB679 /* HeroHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderView.swift; sourceTree = "<group>"; };
 		93F08ACD2975357600C498F4 /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F08AD02975357600C498F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F08AD22975357600C498F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				93D518E429756A71003E4791 /* CollectionTableViewCell.swift */,
+				93EAF8A92979167200FFB679 /* HeroHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				93F08AD12975357600C498F4 /* AppDelegate.swift in Sources */,
 				93F08AD32975357600C498F4 /* SceneDelegate.swift in Sources */,
 				93F08AEB2975433300C498F4 /* UpcomingViewController.swift in Sources */,
+				93EAF8AA2979167200FFB679 /* HeroHeaderView.swift in Sources */,
 				93F08AE92975431C00C498F4 /* HomeViewController.swift in Sources */,
 				93D518E529756A71003E4791 /* CollectionTableViewCell.swift in Sources */,
 			);
