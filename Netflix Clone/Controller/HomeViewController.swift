@@ -60,6 +60,55 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else {
             return UITableViewCell()
         }
+        switch indexPath.section {
+        case Sections.TrendingMovies.rawValue:
+            APICaller.shared.getTrendingMovies { result in
+                switch result {
+                case let .success(titles):
+                    cell.configure(with: titles)
+                case let .failure(error):
+                    handleError(self, error)
+                }
+            }
+        case Sections.TrendingTv.rawValue:
+            APICaller.shared.getTrendingTv { result in
+                switch result {
+                case let .success(titles):
+                    cell.configure(with: titles)
+                case let .failure(error):
+                    handleError(self, error)
+                }
+            }
+        case Sections.Popular.rawValue:
+            APICaller.shared.getPopular { result in
+                switch result {
+                case let .success(titles):
+                    cell.configure(with: titles)
+                case let .failure(error):
+                    handleError(self, error)
+                }
+            }
+        case Sections.Upcoming.rawValue:
+            APICaller.shared.getUpcomingMovies { result in
+                switch result {
+                case let .success(titles):
+                    cell.configure(with: titles)
+                case let .failure(error):
+                    handleError(self, error)
+                }
+            }
+        case Sections.TopRated.rawValue:
+            APICaller.shared.getTopRated { result in
+                switch result {
+                case let .success(titles):
+                    cell.configure(with: titles)
+                case let .failure(error):
+                    handleError(self, error)
+                }
+            }
+        default:
+            return UITableViewCell()
+        }
         return cell
     }
 
